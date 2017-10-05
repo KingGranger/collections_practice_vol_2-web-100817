@@ -8,5 +8,5 @@ def contain_a array
 end
 
 def first_wa array
-  array.find{|word| word.start_with?("wa")}
+  array.find{|word| word.to_s.start_with?("wa")}.join
 end
